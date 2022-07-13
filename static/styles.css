@@ -1,0 +1,299 @@
+/*-------------------- Root Properties --------------------*/
+:root {
+    --ff-primary: 'Viga', sans-serif;
+    --ff-secondary: 'Montserrat Alternates', sans-serif;
+
+    --fw-reg: 500;
+
+    --clr-light: #F4F1DE;
+    --clr-blue: #3D405B;
+    --clr-orange: #E07A5F;
+
+    --fs-h1: 5rem;
+    --fs-h2: 4rem;
+    --fs-h3: 2rem;
+    --fs-h4: 1.3rem;
+    --fs-body: 1.1rem;
+    --fs-attribute: 0.8rem;
+    --fs-ftr: 0.9rem;
+}
+
+/*-------------------- General Setup (Tags) --------------------*/
+a {
+    color: var(--clr-light);
+    padding: 0 1%;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-orange);
+}
+
+body {
+    font-family: var(--ff-secondary);
+    text-align: center;
+    font-size: var(--fs-body);
+}
+
+button {
+    margin-top: 30px;
+}
+
+i {
+    padding: 0 10px 25px;
+}
+
+img {
+    padding: 7% 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+section {
+    padding-top: 8%;
+}
+
+/*-------------------- Typography --------------------*/
+.attrib {
+    font-size: var(--fs-attribute);
+    opacity: .4;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-primary);
+    padding-bottom: 1%;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-reg);
+}
+
+@media (max-width: 990px) {
+    h1 {
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        padding-top: 13%;
+    }
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    padding-top: 5%;
+}
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-family: var(--ff-secondary); }
+
+.left-aligned-paragraph {
+    text-align: left;
+}
+
+.orange-text {
+    color: var(--clr-orange);
+}
+
+.project a {
+    color: var(--clr-orange);
+}
+
+.project a:hover {
+    color: var(--clr-blue);
+    opacity: 0.7;
+}
+
+.subtitle {
+    font-size: var(--fs-h4);
+    padding: .4rem 0;
+    display: inline;
+}
+
+/*-------------------- Sections / Containers --------------------*/
+.color-section {
+    background: var(--clr-orange);
+    color: var(--clr-light);
+}
+
+.container-fluid {
+  padding: 7% 10% 10%;
+}
+
+.footer {
+    background-color: var(--clr-blue);
+    color: var(--clr-light);
+    padding: 2%;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.code-img {
+    padding: 0;
+    width: 100px;
+}
+
+.offwhite-section {
+    background: var(--clr-light);
+    color: var(--clr-blue);
+}
+
+.project {
+    padding: 3% 3%;
+}
+
+.text-section {
+    padding: 0 15%;
+}
+
+/*-------------------- Buttons --------------------*/
+.close-btn {
+    background-color: var(--clr-blue);
+    color: var(--clr-light);
+    border: none;
+}
+
+.close-btn:hover {
+    background-color: var(--clr-orange);
+    color: var(--clr-light);
+}
+
+.port-btn {
+    background-color: var(--clr-light);
+    color: var(--clr-orange);
+    border: none;
+}
+.port-btn:hover {
+    background-color: var(--clr-blue);
+    color: var(--clr-light);
+    opacity: 0.9;
+}
+
+/*-------------------- Images --------------------*/
+.camera-header-img {
+    padding: 0;
+    width: 100px;
+}
+
+.half-width-pic {
+    width: 50%;
+    padding-bottom: 0;
+}
+
+.icon-img {
+    width: 150px;
+}
+
+.full-width-pic {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+/*-------------------- Card Display --------------------*/
+.card {
+    border: none;
+    background-color: #E07A5F;
+    margin: 0 auto;
+}
+
+.card-img-top {
+    padding: 0;
+}
+
+.space {
+    padding: 2% 1%;
+}
+
+/*-------------------- Modal Setup (Image Lightbox) --------------------*/
+.modal-image {
+    width: 100%;
+    padding: 1% 0;
+}
+
+.modal-content {
+    background-color: var(--clr-light);
+}
+
+/*-------------------- Navbar --------------------*/
+.navbar {
+    background-color: var(--clr-blue);
+    margin-bottom: 2%;
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--clr-light);
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: var(--clr-orange);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--clr-light);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--clr-light);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--clr-orange);
+}
+
+.nav-link {
+    color: var(--clr-blue);
+    display: inline;
+}
+
+.nav-link:hover {
+    color: var(--clr-orange);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler i {
+    padding: 0;
+}
+
+.navbar-nav i {
+    padding-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav i {
+        padding: 1em;
+    }
+}
+
+/* Navbar dropdown style */
+.dropdown-menu {
+    background: var(--clr-blue);
+    border: none;
+}
+
+.dropdown-item {
+    color: var(--clr-light);
+}
+
+.dropdown-item:hover {
+    background: var(--clr-orange);
+    color: var(--clr-light);
+}

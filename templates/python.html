@@ -1,0 +1,420 @@
+{% include 'header.html' %}
+
+<!--Title-->
+<section class="color-section">
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Software Developer Portfolio</h1>
+        </div>
+    </div>
+</section>
+
+<!--Main-->
+<section class="offwhite-section">
+    <div class="container-fluid">
+        <img class='code-img' src="static/images/startup.png">
+        <div class="row">
+            <!-- Virtual Assistant -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/Aardvark_Virtual_Assistant" target="_blank">
+                    <h3>Virtual Assistant</h3></a>
+                <a href="https://youtu.be/FREg_AaSG4o" target="_blank">Video Demo</a>
+                <p>A virtual assistant built in Python using: Speech Recognition, pyttsx3, selenium, PyAutoGUI,
+                    osascript, and opencv_python, and multiple APIs.
+                    Aardvark captures speech from the default microphone, transcripts it into an english string,
+                    then performs various functions based on the commands. It is only activated by saying its name,
+                    "Aardvark."</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#virtualAssistantModal"><img
+                        class="half-width-pic" src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
+                        alt="instructions"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="virtualAssistantModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="virtualAssistantModalTitle">Virtual Assistant
+                                    Instructions</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <a href="https://youtu.be/FREg_AaSG4o" target="_blank"><h5>Video Demo</h5></a>
+                                <img class="modal-image" src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breakout Game -->
+            </div>
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/breakout-game" target="_blank">
+                    <h3>Breakout Game</h3></a>
+                <p>A version of the Breakout game in python using the turtle library. Made with OOP principles. Keeps
+                    track of score and lives. Game gets progressively harder as the score increases.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#breakoutModal"><img
+                        class="full-width-pic" src="static/images/breakout_game.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="breakoutModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="breakoutTitle">Breakout Game Screenshot</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/breakout_game.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- To-Do List Web -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/todo-list-website" target="_blank">
+                    <h3>To-do List Website</h3></a>
+                <p>A website built with Flask and SQLAlchemy to create todo lists. and saves them to a database. Lists
+                    are saved to different users.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#todoModal"><img
+                        class="full-width-pic" src="static/images/todo-main.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="todoModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="todoTitle">To-Do List Website Screenshot</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/todo-main.png"
+                                     alt="instructions">
+                                <img class="modal-image" src="static/images/todo-home.png"
+                                     alt="instructions">
+                                <img class="modal-image" src="static/images/todo-login.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Automated Job Search -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/automated-job-search" target="_blank">
+                    <h3>Automated Job Search</h3></a>
+                <p>Uses Selenium to scrape google for jobs in certain cities, for specific job roles. Creates a
+                    dictionary of the data, then sends an email with the formatted data everyday.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#jobModal"><img
+                        class="full-width-pic" src="static/images/automated-job-search.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="jobModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="jobTitle">Automated Job Search</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/automated-job-search.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Music Info Website -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/music-artist-info-website" target="_blank">
+                    <h3>Musical Artist Info Website</h3></a>
+                <p>A website built with Flask and Bootstrap that will search for a musical artist and give a bio,
+                    discography, and images in a webpage.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#musicInfoModal"><img
+                        class="full-width-pic" src="static/images/music-info-1.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="musicInfoModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="musicInfoModalTitle">Musical Artist Info Website</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/music-info-1.png"
+                                     alt="instructions">
+                                <img class="modal-image" src="static/images/music-info-2.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Simple Online Store -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/simple-online-store" target="_blank">
+                    <h3>Simple Online Store</h3></a>
+                <p>A simple online store built with Flask and SQLAlchemy. Cart is saved to a specific user to allow cart
+                    to be saved and returned to later. Integrated with Stripe for easy payment.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#storeModal"><img
+                        class="full-width-pic" src="static/images/store-home.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="storeModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="storeModalTitle">Simple Online Store</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/store-home.png"
+                                     alt="instructions">
+                                <img class="modal-image" src="static/images/store-cart.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Space Invaders -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/space-invaders-clone" target="_blank">
+                    <h3>Space Invaders Clone</h3></a>
+                <p>A space invaders game built using Python and the Pygame library. Keeps track of lives and the score.
+                    The game gets progressively harder as the score increases.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#spaceInvadersModal"><img
+                        class="full-width-pic" src="static/images/space-invaders-pic.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="spaceInvadersModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="spaceInvadersModalTitle">Space Invaders Clone</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/space-invaders-pic.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tic-Tac-Toe -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/tic-tac-toe" target="_blank">
+                    <h3>Tic-Tac-Toe</h3></a>
+                <p>A text-based tic-tac-toe game in Python.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#ticTacToeModal"><img
+                        class="full-width-pic" src="static/images/tic-tac-toe.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ticTacToeModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="ticTacToeModalTitle">Tic-Tac-Toe</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/tic-tac-toe.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Text to Morse Code -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/text-to-morse-code" target="_blank">
+                    <h3>Text to Morse Code</h3></a>
+                <p>A text based application that translates text into morse code.</p>
+
+                <!-- Button/Image trigger modal -->
+                <a type="button" data-bs-toggle="modal" data-bs-target="#morseCodeModal"><img
+                        class="full-width-pic" src="static/images/text-to-morse-code.png"
+                        alt="screenshot"></a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="morseCodeModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="morseCodeModalTitle">Text to Morse Code</h3>
+                                <button type="button" class="close btn close-btn" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal-image" src="static/images/text-to-morse-code.png"
+                                     alt="instructions">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Color Palette from Image -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/color-palette-from-image-webapp" target="_blank">
+                    <h3>Color Palette from Image Web App</h3></a>
+                <p>A simple web app built with Python, Flask, HTML, CSS, and Bootstrap to give the user the top colors
+                    in an uploaded image.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Image Watermarker -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/image-watermark-app" target="_blank">
+                    <h3>Image Watermarker App</h3></a>
+                <p>A GUI app that watermarks images with custom text.</p>
+            </div>
+            <!-- Most Dangerous Writing Game -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/the-most-dangerous-writing-app" target="_blank">
+                    <h3>The Most Dangerous Writing App</h3></a>
+                <p>A GUI writing app that is designed to help end writers block. If nothing is typed for a certain
+                    period of time all text is deleted.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Music News Webscrapper -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/music-news-webscraper" target="_blank">
+                    <h3>Music News Webscraper</h3></a>
+                <p>A webscraper built with BeautifulSoup and Twilio that scrapes an indie music website for news and
+                    sends the top articles via twilio.</p>
+            </div>
+            <!-- Police Force Analytics -->
+            <div class="col-md-6 project">
+                <a href="https://github.com/derekbeistad/analytics-on-police-fatal-force" target="_blank">
+                    <h3>Analytics on Police Fatal Force</h3></a>
+                <p>Analytics done using data gathered around deaths in police interactions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% include 'footer.html' %}
