@@ -8,6 +8,7 @@
     --clr-light: #F4F1DE;
     --clr-blue: #3D405B;
     --clr-orange: #E07A5F;
+    --clr-highlight: #f2cc8f;
 
     --fs-h1: 5rem;
     --fs-h2: 4rem;
@@ -99,6 +100,11 @@ h3 { font-size: var(--fs-h3); }
 h4 { font-size: var(--fs-h4); }
 h5 { font-family: var(--ff-secondary); }
 
+.header-quote {
+    color: var(--clr-orange);
+    margin-top: 10%;
+}
+
 .left-aligned-paragraph {
     text-align: left;
 }
@@ -108,7 +114,7 @@ h5 { font-family: var(--ff-secondary); }
 }
 
 .project a {
-    color: var(--clr-orange);
+    color: var(--clr-light);
 }
 
 .project a:hover {
@@ -120,6 +126,10 @@ h5 { font-family: var(--ff-secondary); }
     font-size: var(--fs-h4);
     padding: .4rem 0;
     display: inline;
+}
+
+.video-header {
+    padding: 0;
 }
 
 /*-------------------- Sections / Containers --------------------*/
@@ -148,17 +158,58 @@ h5 { font-family: var(--ff-secondary); }
     width: 100px;
 }
 
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/backgroundimg.jpg");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--clr-blue);
+}
+
 .offwhite-section {
     background: var(--clr-light);
     color: var(--clr-blue);
 }
 
+.portfolio {
+    padding-top: 0;
+}
+
 .project {
-    padding: 3% 3%;
+    padding: 3% 8%;
+}
+
+.subheader {
+    display: inline-block;
 }
 
 .text-section {
     padding: 0 15%;
+}
+
+.video-section {
+    position: relative;
+    background-color: var(--clr-light);
+    color: var(--clr-orange);
+    padding: 0;
+}
+
+.video-section .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    aspect-ratio: 60 / 25;
+}
+
+#myVideo {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*-------------------- Buttons --------------------*/
@@ -178,10 +229,31 @@ h5 { font-family: var(--ff-secondary); }
     color: var(--clr-orange);
     border: none;
 }
+
 .port-btn:hover {
     background-color: var(--clr-blue);
     color: var(--clr-light);
     opacity: 0.9;
+}
+
+.video-btn {
+    background-color: var(--clr-orange);
+    color: var(--clr-light);
+    border: none;
+    margin: 1%;
+    padding: 3% 10%;
+}
+
+.video-btn:hover {
+    background-color: var(--clr-light);
+    color: var(--clr-orange);
+}
+
+/*-------------------- Embedded Video --------------------*/
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    padding: 3% 5%;
 }
 
 /*-------------------- Images --------------------*/
@@ -231,28 +303,28 @@ h5 { font-family: var(--ff-secondary); }
 
 /*-------------------- Navbar --------------------*/
 .navbar {
-    background-color: var(--clr-blue);
+    background-color: none;
     margin-bottom: 2%;
 }
 
 .navbar-dark .navbar-brand {
-    color: var(--clr-light);
+    color: var(--clr-blue);
 }
 
 .navbar-dark .navbar-brand:hover {
-    color: var(--clr-orange);
+    color: var(--clr-highlight);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--clr-light);
+    color: var(--clr-blue);
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--clr-light);
+    color: var(--clr-blue);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--clr-orange);
+    color: var(--clr-highlight);
 }
 
 .nav-link {
@@ -261,7 +333,7 @@ h5 { font-family: var(--ff-secondary); }
 }
 
 .nav-link:hover {
-    color: var(--clr-orange);
+    color: var(--clr-highlight);
 }
 
 .navbar-toggler {
@@ -277,6 +349,14 @@ h5 { font-family: var(--ff-secondary); }
     padding-bottom: 0;
 }
 
+.navbar-icon {
+    color: var(--clr-blue);
+}
+
+.navbar-icon:hover {
+    color: var(--clr-highlight);
+}
+
 @media (max-width: 991px) {
     .navbar-nav i {
         padding: 1em;
@@ -285,15 +365,15 @@ h5 { font-family: var(--ff-secondary); }
 
 /* Navbar dropdown style */
 .dropdown-menu {
-    background: var(--clr-blue);
+    background: none;
     border: none;
 }
 
 .dropdown-item {
-    color: var(--clr-light);
+    color: var(--clr-blue);
 }
 
 .dropdown-item:hover {
-    background: var(--clr-orange);
-    color: var(--clr-light);
+    background: none;
+    color: var(--clr-highlight);
 }
