@@ -83,6 +83,15 @@ h1 {
 @media (max-width: 990px) {
     h1 {
         padding-top: 10%;
+        font-size: var(--fs-h2);
+    }
+
+    .navbar-nav i {
+        padding: 1em;
+    }
+
+    .small-headers {
+        font-size: 3.25rem;
     }
 }
 
@@ -355,12 +364,6 @@ h5 { font-family: var(--ff-secondary); }
 
 .navbar-icon:hover {
     color: var(--clr-highlight);
-}
-
-@media (max-width: 991px) {
-    .navbar-nav i {
-        padding: 1em;
-    }
 }
 
 /* Navbar dropdown style */
