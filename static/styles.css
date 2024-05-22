@@ -173,7 +173,7 @@ h5 { font-family: var(--ff-secondary); }
 .hero-section {
     width: 100vw;
     height: 100vh;
-    background-image: url("images/backgroundimg.webp"), url("images/backgroundimg.jpg");
+    background-image: url("../images/backgroundimg.webp"), url("../images/backgroundimg.jpg");
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
