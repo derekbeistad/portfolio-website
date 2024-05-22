@@ -1,0 +1,918 @@
+{% include 'header.html' %}
+
+<!--Title-->
+<section class="color-section" id="dev-top">
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Data Analyst</h1>
+        </div>
+        <div>
+            <a href="#portfolio">
+                <button type="button" class="btn btn-light btn-lg port-btn">
+                    Portfolio
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="offwhite-section text-section">
+    <div class="container-fluid">
+        <div class="row">
+            <h2 class="small-headers">Skills</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 my-auto left-aligned-paragraph">
+                <div class="row">
+                    <div class="col-lg-12 d-flex">
+                        <ul class="mx-auto">
+                            <li>Data Analysis</li>
+                            <li>Data Visualization and Dashboarding</li>
+                            <li>Data wrangling and cleaning</li>
+                            <li>Statistical Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex">
+                        <div class="mx-auto">
+                            <h4 class="skill-title text-center">
+                                Languages / Technologies
+                            </h4>
+                            <ul>
+                                <li>SQL</li>
+                                <li>Python</li>
+                                <li>Pandas</li>
+                                <li>Numpy</li>
+                                <li>Excel</li>
+                                <li>GeoPandas</li>
+                                <li>Tableau and Power BI</li>
+                                <li>SQLite & SQLAlchemy</li>
+                                <li>Git and Github</li>
+                                <li>Selenium</li>
+                                <li>Beautiful Soup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <img class="icon-img" src="static/images/pencil.png" />
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="small-headers">Education</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 my-auto order-lg-first order-last">
+                <img src="static/images/books.png" />
+            </div>
+            <div class="col-lg-6">
+                <br />
+                <div class="my-auto left-aligned-paragraph">
+                    <h3>Nashville Software School</h3>
+                    <p><strong>Data Analyst Apprentice</strong></p>
+                    <ul>
+                        <li>Graduation: end of June 2024</li>
+                    </ul>
+                </div>
+                <br />
+                <div class="my-auto left-aligned-paragraph">
+                    <h3>University of Minnesota</h3>
+                    <p><strong>Bachelor of Science in Communication</strong></p>
+                    <ul>
+                        <li>Graduated with Honors (3.9 GPA)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="small-headers">Certificates</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 my-auto left-aligned-paragraph">
+                <ul>
+                    <li>The Complete 2022 Web Development Bootcamp</li>
+                    <li>
+                        The Complete Python Pro Bootcamp for 2022, March 2022
+                    </li>
+                    <li>
+                        Coding Fundamentals I & II, Grasshopper App, June 2022
+                    </li>
+                    <li>Python for Data Science, Sololearn, July 2022</li>
+                    <li>Python Core, Sololearn, June 2022</li>
+                    <li>Python Data Structures, Sololearn, May 2022</li>
+                    <li>Web Development Fundamentals, Sololearn, July 2022</li>
+                    <li>SQL, Sololearn, May 2022</li>
+                    <li>Intermediate Python, Sololearn, December 2021</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <img class="icon-img" src="static/images/certificate.png" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolion Section -->
+<section class="color-section portfolio" id="portfolio">
+    <div class="container-fluid">
+        <img class="code-img" src="static/images/startup.png" />
+
+        <!-- Scooters and WeGo -->
+        <div class="row">
+            <!-- DA11 Scooters -->
+            <div class="col-md-6 project  my-auto">
+                <a
+                    href="https://github.com/NSS-Data-Analytics-Cohort-11/scooters-margherita/tree/dbeistad-branch"
+                    target="_blank"
+                >
+                    <h3>Nashville Scooter Analysis</h3></a
+                >
+
+                <p>
+                    (Python/SQL): Use real-world large datasets to make
+                    recommendations for quantity and distribution of scooters in
+                    Nashville. (Python, Pandas, SQLAlchemy, etc.)
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#scooterModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/scooters.png"
+                        alt="scooters analysis image"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="scooterModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="scooterModalTitle">
+                                    Nashville Scooter Analysis Screenshot
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    class="modal-image"
+                                    src="static/images/scooters.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DA11 WeGo Bus -->
+            <div class="col-md-6 project  my-auto">
+                <a
+                    href="https://github.com/NSS-Data-Analytics-Cohort-11/wego-caesars-legion/tree/derekbranch"
+                    target="_blank"
+                >
+                    <h3>WeGo Bus Analysis</h3></a
+                >
+
+                <p>
+                    (Python): Used WeGo Public Transit data to analyze bus
+                    spacing and on-timepercentages based on direction of travel,
+                    route, location, day/time, and other factors.
+                    Createdvisualizations and shared insights in group
+                    presentation. (Python, Pandas)
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#wegoModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/wego.png"
+                        alt="wego analysis image"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="wegoModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="wegoModalTitle">
+                                    WeGo Bus Analysis Screenshot
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    class="modal-image"
+                                    src="static/images/wego.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Virtual Assistant and Automated Job Search -->
+        <div class="row">
+            <!-- Virtual Assistant -->
+            <div class="col-md-6 project  my-auto">
+                <a
+                    href="https://github.com/derekbeistad/Aardvark_Virtual_Assistant"
+                    target="_blank"
+                >
+                    <h3>Virtual Assistant</h3></a
+                >
+                <a href="https://youtu.be/FREg_AaSG4o" target="_blank"
+                    >Video Demo</a
+                >
+                <p>
+                    A virtual assistant built in Python using: Speech
+                    Recognition, pyttsx3, selenium, PyAutoGUI, osascript, and
+                    opencv_python, and multiple APIs. Aardvark captures speech
+                    from the default microphone, transcripts it into an english
+                    string, then performs various functions based on the
+                    commands. It is only activated by saying its name,
+                    "Aardvark."
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#virtualAssistantModal"
+                    ><img
+                        class="half-width-pic"
+                        src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
+                        alt="instructions"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="virtualAssistantModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3
+                                    class="modal-title"
+                                    id="virtualAssistantModalTitle"
+                                >
+                                    Virtual Assistant Instructions
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <a
+                                    href="https://youtu.be/FREg_AaSG4o"
+                                    target="_blank"
+                                    ><h5>Video Demo</h5></a
+                                >
+                                <img
+                                    class="modal-image"
+                                    src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Automated Job Search -->
+            <div class="col-md-6 project my-auto">
+                <a
+                    href="https://github.com/derekbeistad/automated-job-search"
+                    target="_blank"
+                >
+                    <h3>Automated Job Search</h3></a
+                >
+                <p>
+                    Uses Selenium to scrape google for jobs in certain cities,
+                    for specific job roles. Creates a dictionary of the data,
+                    then sends an email with the formatted data everyday.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#jobModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/automated-job-search.png"
+                        alt="screenshot"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="jobModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="jobTitle">
+                                    Automated Job Search
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    class="modal-image"
+                                    src="static/images/automated-job-search.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MovieGuru and Virtual Keyboard -->
+        <div class="row">
+            <!-- Movie Guru -->
+            <div class="col-md-6 project  my-auto">
+                <a
+                    href="https://github.com/derekbeistad/movieguru-json"
+                    target="_blank"
+                >
+                    <h3>Movie Guru</h3></a
+                >
+                <a href="https://movieguru-json.vercel.app/" target="_blank"
+                    >Live Site</a
+                >
+                <p>
+                    A clone of a streaming service. Shows and movies can be browsed without 
+                    logging in, but to view the movie page, the user must be logged in. Titles 
+                    are stored in JSON files and are then filtered by category into their own 
+                    carousels. Built with Next.js (React.js, node.js), JavaScript, HTML, CSS with OAuth login.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#movieguruModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/movieguru.webp"
+                        alt="instructions"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="movieguruModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3
+                                    class="modal-title"
+                                    id="movieguruModalTitle"
+                                >
+                                    Movie Guru
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <a
+                                    href="https://movieguru-json.vercel.app/"
+                                    target="_blank"
+                                    ><h5>Live Site</h5></a
+                                >
+                                <img
+                                    class="modal-image"
+                                    src="static/images/movieguru.webp"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virtual Keyboard -->
+            <div class="col-md-6 project  my-auto">
+                <a
+                    href="https://github.com/derekbeistad/virtual-keyboard"
+                    target="_blank"
+                >
+                    <h3>Responsive Virtual Keyboard</h3></a
+                >
+                <a href="https://responsive-virtual-keyboard.web.app/" target="_blank"
+                    >Live Site</a
+                >
+                <p>
+                    A responsive virtual keyboard with all keys (including special 
+                    characters). Built with JavaScript, HTML, and CSS.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#keyboardModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/virtual-keyboard.webp"
+                        alt="screenshot"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="keyboardModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="keyboardTitle">
+                                    Automated Job Search
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <a
+                                    href="https://responsive-virtual-keyboard.web.app/"
+                                    target="_blank"
+                                    ><h5>Live Site</h5></a
+                                >
+                                <img
+                                    class="modal-image"
+                                    src="static/images/virtual-keyboard.webp"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Todo List and Breakout Game -->
+        <div class="row">
+            <!-- To-Do List Web -->
+            <div class="col-md-6 project  my-auto">
+                <a
+                    href="https://github.com/derekbeistad/todo-list-website"
+                    target="_blank"
+                >
+                    <h3>To-do List Website</h3></a
+                >
+                <p>
+                    A website built with Flask and SQLAlchemy to create todo
+                    lists. and saves them to a database. Lists are saved to
+                    different users.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#todoModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/todo-main.png"
+                        alt="screenshot"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="todoModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="todoTitle">
+                                    To-Do List Website Screenshot
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    class="modal-image"
+                                    src="static/images/todo-main.png"
+                                    alt="instructions"
+                                />
+                                <img
+                                    class="modal-image"
+                                    src="static/images/todo-home.png"
+                                    alt="instructions"
+                                />
+                                <img
+                                    class="modal-image"
+                                    src="static/images/todo-login.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakout Game -->
+            <div class="col-md-6 project my-auto">
+                <a
+                    href="https://github.com/derekbeistad/breakout-game"
+                    target="_blank"
+                >
+                    <h3>Breakout Game</h3></a
+                >
+                <p>
+                    A version of the Breakout game in python using the turtle
+                    library. Made with OOP principles. Keeps track of score and
+                    lives. Game gets progressively harder as the score
+                    increases.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#breakoutModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/breakout_game.png"
+                        alt="screenshot"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="breakoutModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="breakoutTitle">
+                                    Breakout Game Screenshot
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    class="modal-image"
+                                    src="static/images/breakout_game.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Space Invaders and Musician Website -->
+        <div class="row">
+            <!-- Space Invaders -->
+            <div class="col-md-6 project  my-auto">
+                <a
+                    href="https://github.com/derekbeistad/space-invaders-clone"
+                    target="_blank"
+                >
+                    <h3>Space Invaders Clone</h3></a
+                >
+                <p>
+                    A space invaders game built using Python and the Pygame
+                    library. Keeps track of lives and the score. The game gets
+                    progressively harder as the score increases.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#spaceInvadersModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/space-invaders-pic.png"
+                        alt="screenshot"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="spaceInvadersModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3
+                                    class="modal-title"
+                                    id="spaceInvadersModalTitle"
+                                >
+                                    Space Invaders Clone
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    class="modal-image"
+                                    src="static/images/space-invaders-pic.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Musician Website -->
+            <div class="col-md-6 project  my-auto">
+                <a href="https://www.lbbeistad.com/" target="_blank">
+                    <h3>Musician Website</h3></a
+                >
+                <p>
+                    A website for an indie pop artist based out of Nashville.
+                    Active running website built from the ground up and features
+                    media and assets of various types and integrations with
+                    other services such as Spotify, BandsInTown, and more.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#musicianModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/lb-website.png"
+                        alt="screenshot"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="musicianModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="musicianModalTitle">
+                                    Musician Website
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img
+                                    class="modal-image"
+                                    src="static/images/lb-website.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}

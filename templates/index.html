@@ -11,19 +11,14 @@
 
                 <div class="row justify-content-center">
                     <h5>
-                        <div class="subheader"><a class="nav-link subtitle" href="#video">☞ Video
-                            Creator</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="subheader"><a class="nav-link subtitle" href="{{ url_for('data_page') }}">☞ Data Analyst</a></div>
+                        <div class="subheader"><a class="nav-link subtitle" href="{{ url_for('data_page') }}">☞ Web Developer</a>&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
-                        <div class="subheader"><a class="nav-link subtitle" href="#photo">☞
-                            Photographer</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        </div>
-                        <div class="subheader"><a class="nav-link subtitle" href="{{ url_for('dev') }}">☞ Web
-                            Developer</a></div>
                     </h5>
                 </div>
             </div>
             <div class="header-quote">
-                <h3 class="header-quote">I'm motivated by art, to create art</h3>
+                <h3 class="header-quote">"hope is passion for what is possible" - Søren Kierkegaard</h3>
             </div>
         </div>
 </section>
@@ -37,12 +32,13 @@
         </div>
         <div class="row">
             <div class="col-lg-6 my-auto">
-                <p class="left-aligned-paragraph">I'm a Video Creator, Photographer, and Web Developer based out of
-                    Nashville, TN. I aim to produce creative works that show a unique perspective on the world. I am
-                    always learning and looking to challenge myself. I love collaborating with other artists.</p>
+                <p class="left-aligned-paragraph">I'm a Data Analyst, Web Developer, and media producer based out of
+                    Nashville, TN. I aim to provide unique insights by solving complex problems with data. I have 
+                    technical experience and knowledge of programming languages, data analytics, data visualization, 
+                    and web development.</p>
             </div>
             <div class="col-lg-6 my-auto">
-                <img class="icon-img" src="static/images/travel.png">
+                <img class="icon-img" src="static/images/data.png">
             </div>
         </div>
         <div class="row">
@@ -50,110 +46,37 @@
                 <img class="icon-img" src="static/images/coding.png">
             </div>
             <div class="col-lg-6 my-auto">
-                <p class="left-aligned-paragraph">In addition to my work, I am very passionate about travel, music,
-                    hiking, and staying active both physically and mentally.
+                <p class="left-aligned-paragraph">Python, SQL, JavaScript, HTML, CSS, Tableau, PowerBI, Pandas,
+                     Numpy, GeoPandas, SQLAlchemy
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 my-auto">
+                <p class="left-aligned-paragraph">I am passionate about music, science, video, and photography. I
+                    love traveling and h iking with my wife and dog. I enjoy learning and am always challenging myself.</p>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <img class="icon-img" src="static/images/travel.png">
             </div>
         </div>
         <div class="row">
             <h2 class="small-headers">Portfolios</h2>
         </div>
         <div class="row">
-            <div class="col-lg-4 order-first my-auto">
-                <a href="#photo">
-                    <button type="button" class="btn btn-light btn-lg port-btn">Photography Portfolio</button>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 my-auto">
+            <div class="col-md-6 my-auto">
                 <a href="#video">
-                    <button type="button" class="btn btn-light btn-lg port-btn">Videography Portfolio</button>
+                    <button type="button" class="btn btn-light btn-lg port-btn">data analyst portfolio</button>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 my-auto">
-                <a href="{{ url_for('dev') }}">
-                    <button type="button" class="btn btn-light btn-lg port-btn">Developer Portfolio</button>
+            <div class="col-md-6 my-auto">
+                <a href="{{ url_for('data_page') }}">
+                    <button type="button" class="btn btn-light btn-lg port-btn">web developer portfolio</button>
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<!--Video-->
-<section class="video-section" id="video">
-    <video autoplay muted loop id="myVideo">
-        <source src="static/images/background-video.mp4" type="video/mp4">
-    </video>
-
-    <div class="container-fluid overlay">
-        <div class="row h-100">
-            <div class="col-md-6 my-auto">
-                <h2 class="video-header">Video</h2>
-            </div>
-
-            <div class="col-md-6 my-auto">
-                <div class="row">
-                    <div class="col my-auto">
-                        <a href="https://phantomcatproductions.com/videos">
-                            <button type="button" class="btn btn-light btn-lg video-btn">Music</button>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="https://phantomcatproductions.com/wedding-video">
-                            <button type="button" class="btn btn-light btn-lg video-btn">Weddings
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</section>
-
-<!--Photography-->
-<section class="offwhite-section text-section" id="photo">
-
-    <div class="container-fluid">
-        <div class="row">
-            <h2 class="small-headers">Photography</h2>
-        </div>
-        <img src="static/images/camera.png" alt="camera" class="camera-header-img">
-
-        <div class="row">
-            <div class="col-md-4 col-sm-12 space">
-                <div class="card">
-                    <img src="static/images/concert-photo-header.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Concert Photography</h5>
-                        <a href="https://phantomcatproductions.com/" target="_blank"
-                           class="btn btn-dark btn-lg port-btn">View Gallery</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 space">
-                <div class="card">
-                    <img src="static/images/wedding-photo-header.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Wedding Photography</h5>
-                        <a href="https://phantomcatproductions.com/wedding-photography" target="_blank"
-                           class="btn btn-dark btn-lg port-btn">View Gallery</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 space">
-                <div class="card">
-                    <img src="static/images/travel-photo-header.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Travel Photography</h5>
-                        <a href="https://phantomcatproductions.com/travel-photos" target="_blank"
-                           class="btn btn-dark btn-lg port-btn">View Gallery</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
 
 {% include 'footer.html' %}

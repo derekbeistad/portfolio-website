@@ -7,9 +7,9 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/dev")
-def dev():
-    return render_template("developer.html")
+@app.route("/data")
+def data_page():
+    return render_template("data.html")
 
 
 if __name__ == "__main__":
