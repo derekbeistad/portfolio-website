@@ -42,6 +42,8 @@
                             <ul>
                                 <li>SQL</li>
                                 <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML/CSS</li>
                                 <li>Pandas</li>
                                 <li>Numpy</li>
                                 <li>Excel</li>
@@ -50,7 +52,6 @@
                                 <li>SQLite & SQLAlchemy</li>
                                 <li>Git and Github</li>
                                 <li>Selenium</li>
-                                <li>Beautiful Soup</li>
                             </ul>
                         </div>
                     </div>
@@ -73,7 +74,7 @@
                     <h3>Nashville Software School</h3>
                     <p><strong>Data Analyst Apprentice</strong></p>
                     <ul>
-                        <li>Graduation: end of June 2024</li>
+                        <li>Graduated June 2024</li>
                     </ul>
                 </div>
                 <br />
@@ -119,10 +120,97 @@
     <div class="container-fluid">
         <img class="code-img" src="static/images/startup.png" />
 
-        <!-- Scooters and WeGo -->
+        <!-- Health and Scooters -->
         <div class="row">
+            <!-- DA11 Health and Proximity to Natural Areas -->
+            <div class="col-md-6 project my-auto">
+                <a
+                    href="https://github.com/derekbeistad/health-and-proximity-to-natural-areas-analysis"
+                    target="_blank"
+                >
+                    <h3>Health and Proximity to Natural Areas</h3></a
+                >
+
+                <p>
+                    Uses CDC and park data to explore the relationship
+                    betweenpeople's overall health and their proximity to
+                    natural areas. (Python, Tableau, Pandas, GeoPandas,Data
+                    Cleaning and Manipulation)
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#healthModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/intro-img.jpg"
+                        alt="Health and Proximity analysis image"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="healthModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="healthModalTitle">
+                                    Health and Proximity to Natural Areas
+                                    Analysis Screenshot
+                                </h3>
+
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <a
+                                    href="https://github.com/derekbeistad/health-and-proximity-to-natural-areas-analysis"
+                                    target="_blank"
+                                    >github</a
+                                >
+                                <img
+                                    class="full-width-pic"
+                                    src="static/images/intro-img.jpg"
+                                    alt="Health and Proximity analysis image"
+                                />
+                                <img
+                                    class="modal-image"
+                                    src="static/images/conclusions.jpg"
+                                    alt="conclusions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- DA11 Scooters -->
-            <div class="col-md-6 project  my-auto">
+            <div class="col-md-6 project my-auto">
                 <a
                     href="https://github.com/NSS-Data-Analytics-Cohort-11/scooters-margherita/tree/dbeistad-branch"
                     target="_blank"
@@ -175,6 +263,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <a
+                                    href="https://github.com/NSS-Data-Analytics-Cohort-11/scooters-margherita/tree/dbeistad-branch"
+                                    target="_blank"
+                                    >github</a
+                                >
                                 <img
                                     class="modal-image"
                                     src="static/images/scooters.png"
@@ -195,8 +288,13 @@
                 </div>
             </div>
 
+            
+        </div>
+
+        <!-- WeGO AND Virtual Assistant -->
+        <div class="row">
             <!-- DA11 WeGo Bus -->
-            <div class="col-md-6 project  my-auto">
+            <div class="col-md-6 project my-auto">
                 <a
                     href="https://github.com/NSS-Data-Analytics-Cohort-11/wego-caesars-legion/tree/derekbranch"
                     target="_blank"
@@ -206,8 +304,8 @@
 
                 <p>
                     (Python): Used WeGo Public Transit data to analyze bus
-                    spacing and on-timepercentages based on direction of travel,
-                    route, location, day/time, and other factors.
+                    spacing and on-timepercentages based on direction of
+                    travel, route, location, day/time, and other factors.
                     Createdvisualizations and shared insights in group
                     presentation. (Python, Pandas)
                 </p>
@@ -251,6 +349,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <a
+                                href="https://github.com/NSS-Data-Analytics-Cohort-11/wego-caesars-legion/tree/derekbranch"
+                                target="_blank"
+                                ><h5>github</h5></a
+                            >
                                 <img
                                     class="modal-image"
                                     src="static/images/wego.png"
@@ -270,98 +373,104 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
+        <!-- Virtual Assistant -->
+        <div class="col-md-6 project my-auto">
+            <a
+                href="https://github.com/derekbeistad/Aardvark_Virtual_Assistant"
+                target="_blank"
+            >
+                <h3>Virtual Assistant</h3></a
+            >
+            <a href="https://youtu.be/FREg_AaSG4o" target="_blank"
+                >Video Demo</a
+            >
+            <p>
+                A virtual assistant built in Python using: Speech
+                Recognition, pyttsx3, selenium, PyAutoGUI, osascript, and
+                opencv_python, and multiple APIs. Aardvark captures speech
+                from the default microphone, transcripts it into an english
+                string, then performs various functions based on the
+                commands. It is only activated by saying its name,
+                "Aardvark."
+            </p>
 
-        <!-- Virtual Assistant and Automated Job Search -->
-        <div class="row">
-            <!-- Virtual Assistant -->
-            <div class="col-md-6 project  my-auto">
-                <a
-                    href="https://github.com/derekbeistad/Aardvark_Virtual_Assistant"
-                    target="_blank"
-                >
-                    <h3>Virtual Assistant</h3></a
-                >
-                <a href="https://youtu.be/FREg_AaSG4o" target="_blank"
-                    >Video Demo</a
-                >
-                <p>
-                    A virtual assistant built in Python using: Speech
-                    Recognition, pyttsx3, selenium, PyAutoGUI, osascript, and
-                    opencv_python, and multiple APIs. Aardvark captures speech
-                    from the default microphone, transcripts it into an english
-                    string, then performs various functions based on the
-                    commands. It is only activated by saying its name,
-                    "Aardvark."
-                </p>
+            <!-- Button/Image trigger modal -->
+            <a
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#virtualAssistantModal"
+                ><img
+                    class="half-width-pic"
+                    src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
+                    alt="instructions"
+            /></a>
 
-                <!-- Button/Image trigger modal -->
-                <a
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#virtualAssistantModal"
-                    ><img
-                        class="half-width-pic"
-                        src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
-                        alt="instructions"
-                /></a>
-
-                <!-- Modal -->
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="virtualAssistantModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+            >
                 <div
-                    class="modal fade"
-                    id="virtualAssistantModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalCenterTitle"
-                    aria-hidden="true"
+                    class="modal-dialog modal-dialog-centered modal-lg"
+                    role="document"
                 >
-                    <div
-                        class="modal-dialog modal-dialog-centered modal-lg"
-                        role="document"
-                    >
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3
-                                    class="modal-title"
-                                    id="virtualAssistantModalTitle"
-                                >
-                                    Virtual Assistant Instructions
-                                </h3>
-                                <button
-                                    type="button"
-                                    class="close btn close-btn"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <a
-                                    href="https://youtu.be/FREg_AaSG4o"
-                                    target="_blank"
-                                    ><h5>Video Demo</h5></a
-                                >
-                                <img
-                                    class="modal-image"
-                                    src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
-                                    alt="instructions"
-                                />
-                            </div>
-                            <div class="modal-footer">
-                                <button
-                                    type="button"
-                                    class="btn btn-secondary close-btn"
-                                    data-bs-dismiss="modal"
-                                >
-                                    Close
-                                </button>
-                            </div>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3
+                                class="modal-title"
+                                id="virtualAssistantModalTitle"
+                            >
+                                Virtual Assistant Instructions
+                            </h3>
+                            <button
+                                type="button"
+                                class="close btn close-btn"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <a
+                                href="https://youtu.be/FREg_AaSG4o"
+                                target="_blank"
+                                ><h5>Video Demo</h5></a
+                            >
+                            <a
+                                href="https://github.com/derekbeistad/Aardvark_Virtual_Assistant"
+                                target="_blank"
+                                ><h5>github</h5></a
+                            >
+                            <img
+                                class="modal-image"
+                                src="static/images/Aardvark_Virtual_Assistant_Instructions.jpg"
+                                alt="instructions"
+                            />
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-secondary close-btn"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
 
+        </div>
+
+
+        <!-- Automated Job Search and MovieGuru -->
+        <div class="row">
             <!-- Automated Job Search -->
             <div class="col-md-6 project my-auto">
                 <a
@@ -415,6 +524,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <a
+                                    href="https://github.com/derekbeistad/automated-job-search"
+                                    target="_blank"
+                                    >github</a
+                                >
                                 <img
                                     class="modal-image"
                                     src="static/images/automated-job-search.png"
@@ -434,12 +548,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- MovieGuru and Virtual Keyboard -->
-        <div class="row">
             <!-- Movie Guru -->
-            <div class="col-md-6 project  my-auto">
+            <div class="col-md-6 project my-auto">
                 <a
                     href="https://github.com/derekbeistad/movieguru-json"
                     target="_blank"
@@ -450,10 +560,12 @@
                     >Live Site</a
                 >
                 <p>
-                    A clone of a streaming service. Shows and movies can be browsed without 
-                    logging in, but to view the movie page, the user must be logged in. Titles 
-                    are stored in JSON files and are then filtered by category into their own 
-                    carousels. Built with Next.js (React.js, node.js), JavaScript, HTML, CSS with OAuth login.
+                    A clone of a streaming service. Shows and movies can be
+                    browsed without logging in, but to view the movie page, the
+                    user must be logged in. Titles are stored in JSON files and
+                    are then filtered by category into their own carousels.
+                    Built with Next.js (React.js, node.js), JavaScript, HTML,
+                    CSS with OAuth login.
                 </p>
 
                 <!-- Button/Image trigger modal -->
@@ -503,89 +615,14 @@
                                     target="_blank"
                                     ><h5>Live Site</h5></a
                                 >
+                                <a
+                                    href="https://github.com/derekbeistad/movieguru-json"
+                                    target="_blank"
+                                    >github</a
+                                >
                                 <img
                                     class="modal-image"
                                     src="static/images/movieguru.webp"
-                                    alt="instructions"
-                                />
-                            </div>
-                            <div class="modal-footer">
-                                <button
-                                    type="button"
-                                    class="btn btn-secondary close-btn"
-                                    data-bs-dismiss="modal"
-                                >
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Virtual Keyboard -->
-            <div class="col-md-6 project  my-auto">
-                <a
-                    href="https://github.com/derekbeistad/virtual-keyboard"
-                    target="_blank"
-                >
-                    <h3>Responsive Virtual Keyboard</h3></a
-                >
-                <a href="https://responsive-virtual-keyboard.web.app/" target="_blank"
-                    >Live Site</a
-                >
-                <p>
-                    A responsive virtual keyboard with all keys (including special 
-                    characters). Built with JavaScript, HTML, and CSS.
-                </p>
-
-                <!-- Button/Image trigger modal -->
-                <a
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#keyboardModal"
-                    ><img
-                        class="full-width-pic"
-                        src="static/images/virtual-keyboard.webp"
-                        alt="screenshot"
-                /></a>
-
-                <!-- Modal -->
-                <div
-                    class="modal fade"
-                    id="keyboardModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalCenterTitle"
-                    aria-hidden="true"
-                >
-                    <div
-                        class="modal-dialog modal-dialog-centered modal-lg"
-                        role="document"
-                    >
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="keyboardTitle">
-                                    Automated Job Search
-                                </h3>
-                                <button
-                                    type="button"
-                                    class="close btn close-btn"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <a
-                                    href="https://responsive-virtual-keyboard.web.app/"
-                                    target="_blank"
-                                    ><h5>Live Site</h5></a
-                                >
-                                <img
-                                    class="modal-image"
-                                    src="static/images/virtual-keyboard.webp"
                                     alt="instructions"
                                 />
                             </div>
@@ -607,7 +644,7 @@
         <!-- Todo List and Breakout Game -->
         <div class="row">
             <!-- To-Do List Web -->
-            <div class="col-md-6 project  my-auto">
+            <div class="col-md-6 project my-auto">
                 <a
                     href="https://github.com/derekbeistad/todo-list-website"
                     target="_blank"
@@ -659,6 +696,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <a
+                                    href="https://github.com/derekbeistad/todo-list-website"
+                                    target="_blank"
+                                    >github</a
+                                >
                                 <img
                                     class="modal-image"
                                     src="static/images/todo-main.png"
@@ -743,6 +785,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <a
+                                    href="https://github.com/derekbeistad/breakout-game"
+                                    target="_blank"
+                                    >github</a
+                                >
                                 <img
                                     class="modal-image"
                                     src="static/images/breakout_game.png"
@@ -767,7 +814,7 @@
         <!-- Space Invaders and Musician Website -->
         <div class="row">
             <!-- Space Invaders -->
-            <div class="col-md-6 project  my-auto">
+            <div class="col-md-6 project my-auto">
                 <a
                     href="https://github.com/derekbeistad/space-invaders-clone"
                     target="_blank"
@@ -822,6 +869,11 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <a
+                                    href="https://github.com/derekbeistad/space-invaders-clone"
+                                    target="_blank"
+                                    >github</a
+                                >
                                 <img
                                     class="modal-image"
                                     src="static/images/space-invaders-pic.png"
@@ -842,7 +894,7 @@
                 </div>
             </div>
             <!-- Musician Website -->
-            <div class="col-md-6 project  my-auto">
+            <div class="col-md-6 project my-auto">
                 <a href="https://www.lbbeistad.com/" target="_blank">
                     <h3>Musician Website</h3></a
                 >
@@ -892,9 +944,104 @@
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <a
+                                    href="https://www.lbbeistad.com/"
+                                    target="_blank"
+                                    >github</a
+                                >
                                 <img
                                     class="modal-image"
                                     src="static/images/lb-website.png"
+                                    alt="instructions"
+                                />
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary close-btn"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Virtual Keyboard -->
+        <div class="row">
+            <!-- Virtual Keyboard -->
+            <div class="col-md-6 project my-auto">
+                <a
+                    href="https://github.com/derekbeistad/virtual-keyboard"
+                    target="_blank"
+                >
+                    <h3>Responsive Virtual Keyboard</h3></a
+                >
+                <a
+                    href="https://responsive-virtual-keyboard.web.app/"
+                    target="_blank"
+                    >Live Site</a
+                >
+                <p>
+                    A responsive virtual keyboard with all keys (including
+                    special characters). Built with JavaScript, HTML, and CSS.
+                </p>
+
+                <!-- Button/Image trigger modal -->
+                <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#keyboardModal"
+                    ><img
+                        class="full-width-pic"
+                        src="static/images/virtual-keyboard.webp"
+                        alt="screenshot"
+                /></a>
+
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="keyboardModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-lg"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="keyboardTitle">
+                                    Automated Job Search
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="close btn close-btn"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <a
+                                    href="https://responsive-virtual-keyboard.web.app/"
+                                    target="_blank"
+                                    ><h5>Live Site</h5></a
+                                >
+                                <a
+                                    href="https://github.com/derekbeistad/virtual-keyboard"
+                                    target="_blank"
+                                    >github</a
+                                >
+                                <img
+                                    class="modal-image"
+                                    src="static/images/virtual-keyboard.webp"
                                     alt="instructions"
                                 />
                             </div>
